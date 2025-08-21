@@ -3,60 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Basics & The Box Model</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Layout with Flexbox & Grid</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <h1>My CSS + Box Model Assignment</h1>
+        <h1>My Responsive Web Design Assignment</h1>
         <nav>
-            <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#practice">What I Practiced</a></li>
-                <li><a href="#boxmodel">Box Model Demo</a></li>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Introduction -->
-    <section id="intro">
-        <h2>Introduction</h2>
-        <p>
-            This page shows how I used CSS to style text, add colors, 
-            and practice the box model. The box model uses margin, 
-            border and padding to control spacing around elements.
-        </p>
-    </section>
+    <!-- Main layout using CSS Grid -->
+    <main class="grid-layout">
+        <!-- Content Area -->
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                This is my responsive page. I used CSS Grid to make the main layout 
+                and Flexbox to align smaller items like navigation and cards.
+            </p>
+        </section>
 
-    <!-- Practice Section -->
-    <section id="practice">
-        <h2>What I Practiced</h2>
-        <ul>
-            <li>Adding background colors</li>
-            <li>Using borders and spacing</li>
-            <li>Linking HTML with CSS</li>
-            <li>Making simple card sections</li>
-        </ul>
-    </section>
+        <!-- Sidebar -->
+        <aside>
+            <h2>Sidebar</h2>
+            <p>
+                The sidebar shows how grid lets me put content next to the main section.
+            </p>
+        </aside>
+    </main>
 
-    <!-- Box Model Demo -->
-    <section id="boxmodel">
-        <h2>Box Model Example</h2>
-        <div class="card">
-            <h3>Box 1</h3>
-            <p>This box has padding, margin and a border so I can see how spacing works.</p>
-        </div>
-        <div class="card">
-            <h3>Box 2</h3>
-            <p>Another card to compare spacing and layout with the first one.</p>
+    <!-- Services section using Flexbox -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Simple responsive pages built with HTML & CSS.</p>
+            </div>
+            <div class="card">
+                <h3>Layouts</h3>
+                <p>Practicing Flexbox and Grid to create layouts.</p>
+            </div>
+            <div class="card">
+                <h3>Responsive</h3>
+                <p>Using media queries to make designs adapt on all devices.</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>Made by Yamkela Lerotholi - 2025</p>
+    <footer id="contact">
+        <p>Contact: yamkela@example.com | © 2025 Yamkela Lerotholi</p>
     </footer>
 
 </body>
