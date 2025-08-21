@@ -3,66 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout with Flexbox & Grid</title>
+    <title>JavaScript Fundamentals Assignment</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <h1>My Responsive Web Design Assignment</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>JavaScript Fundamentals Practice</h1>
     </header>
 
-    <!-- Main layout using CSS Grid -->
-    <main class="grid-layout">
-        <!-- Content Area -->
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                This is my responsive page. I used CSS Grid to make the main layout 
-                and Flexbox to align smaller items like navigation and cards.
-            </p>
-        </section>
-
-        <!-- Sidebar -->
-        <aside>
-            <h2>Sidebar</h2>
-            <p>
-                The sidebar shows how grid lets me put content next to the main section.
-            </p>
-        </aside>
-    </main>
-
-    <!-- Services section using Flexbox -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>Simple responsive pages built with HTML & CSS.</p>
-            </div>
-            <div class="card">
-                <h3>Layouts</h3>
-                <p>Practicing Flexbox and Grid to create layouts.</p>
-            </div>
-            <div class="card">
-                <h3>Responsive</h3>
-                <p>Using media queries to make designs adapt on all devices.</p>
-            </div>
-        </div>
+    <!-- Part 1: Basics -->
+    <section id="basics">
+        <h2>Part 1: JavaScript Basics</h2>
+        <p>Check your console for some results from variables, conditionals, and operators.</p>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <p>Contact: yamkela@example.com | © 2025 Yamkela Lerotholi</p>
+    <!-- Part 2: Functions -->
+    <section id="functions">
+        <h2>Part 2: Functions</h2>
+        <button id="greet-btn">Click to Greet</button>
+        <p id="greet-output"></p>
+        <button id="calc-btn">Calculate Total</button>
+        <p id="calc-output"></p>
+    </section>
+
+    <!-- Part 3: Loops -->
+    <section id="loops">
+        <h2>Part 3: Loops</h2>
+        <ul id="fruits-list"></ul>
+        <p id="countdown"></p>
+    </section>
+
+    <!-- Part 4: DOM Manipulation -->
+    <section id="dom">
+        <h2>Part 4: DOM Interactions</h2>
+        <button id="change-text-btn">Change Text</button>
+        <p id="dom-text">This text will change when you click the button.</p>
+
+        <button id="toggle-btn">Toggle Color</button>
+        <p id="toggle-text">Click the button to change my color!</p>
+
+        <button id="add-item-btn">Add Item</button>
+        <ul id="item-list"></ul>
+    </section>
+
+    <footer>
+        <p>Made by Yamkela Lerotholi - 2025</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
